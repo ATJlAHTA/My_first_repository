@@ -3,7 +3,7 @@ from pygame.draw import *
 from random import randint
 pygame.init()
 
-FPS = 10
+FPS = 3
 screen = pygame.display.set_mode((800, 600))
 
 RED = (255, 0, 0)
@@ -17,8 +17,8 @@ COLORS = [RED, BLUE, YELLOW, GREEN, MAGENTA, CYAN]
 
 def new_ball():
     # '''рисует новый шарик '''
-    x = randint(100, 1100)
-    y = randint(100, 900)
+    x = randint(100, 700)
+    y = randint(100, 500)
     r = randint(10, 100)
     color = COLORS[randint(0, 5)]
     circle(screen, color, (x, y), r)
